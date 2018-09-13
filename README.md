@@ -10,3 +10,5 @@ https://www.youtube.com/watch?v=tfKk_1nM0TA&t=484s)
 
 [Python & Postgresql](
 https://www.youtube.com/watch?v=PsorlkAF83s&t=894s)
+
+[Another Tutorial](https://www.youtube.com/watch?v=rbRSyIcDVNk)
