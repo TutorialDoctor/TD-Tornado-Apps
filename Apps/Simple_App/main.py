@@ -1,4 +1,4 @@
-import os
+import os,datetime
 import tornado.httpserver
 import tornado.ioloop
 import tornado.web
@@ -17,6 +17,14 @@ class ContactHandler(tornado.web.RequestHandler):
   def get(self):
     #self.write("Contact Us")
     self.render('contact.html')
+    
+  def post(self):
+    name = self.get_argument('name')
+    email = self.get_argument('email')
+    message = self.get_argument('message')
+    created = datetime.datetime.now()
+    self.write("Submitted Succesfully!")
+      
 
 def main():
   settings = dict(

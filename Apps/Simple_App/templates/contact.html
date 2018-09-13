@@ -1,3 +1,29 @@
-<h1>Welcome to Contact</h1>
+<html>
 
-<p>lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua placeat rerum laboriosam optio saepe necessitatibus ipsa vitae ipsum voluptatem facere veritatis molestiae quibusdam dolorum expedita at aspernatur consequatur ipsam odio voluptas dignissimos</p>
+    <head>
+        <title>Simple App</title>
+    </head>
+
+    <body>
+        <h3>Contact Us</h3>
+        <form method="POST" action="/contact">
+            {% module xsrf_form_html() %}
+            <p>
+                <label>Name</label>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label>Email</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </p>
+
+            <p>
+                <button type="submit" value="Send">Send Message</button
+            </p>
+        </form>
+    </body>
+</html>
